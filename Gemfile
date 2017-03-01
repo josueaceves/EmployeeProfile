@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.2'
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
