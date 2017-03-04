@@ -1,0 +1,26 @@
+<div class="form">
+  <ul class="tab-group">
+    <li class="tab"><a href="#signup">Sign Up</a></li>
+    <li class="tab active"><a href="#login">Log In</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="login">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="top-row">
+          <div class="field-wrap">
+            <%= f.label :email, class: "req" %>
+            <%= f.email_field :email, autofocus: true, required: "", autocomplete:"off" %>
+          </div>
+
+          <div class="field-wrap">
+            <%= f.label :password, class: "req"%>
+            <%= f.password_field :password, required: "", autocomplete:"off" %>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="button button-block"/>Go!</button>
+      <% end %>
+      <p class="pull-center"><%= render "devise/shared/links" %></p>
+    </div>
+  </div>
+</div>
