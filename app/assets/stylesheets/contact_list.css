@@ -103,6 +103,10 @@ ul.c-controls li a:hover {
   margin-left: 3% !important;
   margin-right: 3% !important;
 }
+.contact-container-scroll {
+  overflow-y: scroll;
+
+}
 .contact-container-body {
   width: 97%;
   height: 550px;
@@ -170,4 +174,8 @@ ul.c-controls li a:hover {
 }
 .list-group-item {
   cursor: pointer;
+}
+
+.margin-top {
+  margin-top: 10px;
 }
